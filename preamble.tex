@@ -17,8 +17,11 @@
 
 \usepackage{titlesec}
 
+\newcounter{mysection}
 \titleformat{\section}
-  {\centering\normalfont\fontsize{14}{14}\bfseries}{}{1em}{}
+  {\centering\normalfont\fontsize{16}{16}\bfseries}{}{1em}{}
+\titleformat{\subsection}
+  {\normalfont\fontsize{14}{14}\bfseries}{\arabic{mysection}.\arabic{subsection}}{1em}{}
 
 \usepackage{tikz}
 \usepackage{verbatim}
